@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home page - Leitura&Cia</title>
+</head>
+
+<body>
+
+    <!-----------------------Header (Cabecalio do site)----------------------->
+    <header>
+        <div class="div-blue-header">
+            <!-- Menu Hamburger só visível no mobile -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <p class="header-p"><a class="logo-text" href="index.html">Leitura&Cia</a></p>
+
+            <!-- Barra de pesquisa padrão para desktop -->
+            <div class="search-bar-desktop">
+                <input class="header-input" type="text" placeholder="Digite para pesquisar">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="header-icons">
+                <i class='bx bx-user-circle'></i>
+                <i class='bx bx-cart'></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Links do menu principal para desktop -->
+    <nav class="nav-links">
+        <div class="div-white-header">
+            <ul class="nav-ul">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Pré Venda</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Livros Nacionais</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutUs.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu lateral (modal) para mobile -->
+    <div class="side-menu" id="side-menu">
+        <ul class="nav-ul">
+            <li class="nav-item"><a class="nav-link" href="">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Pré Venda</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Livros Nacionais</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre Nós</a></li>
+        </ul>
+        <i class='bx bx-x' id="close-menu"></i>
+    </div>
+
+    <!-----------------------Principal (meio do site)----------------------->
+
+    <main>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <img src="../img/banner.webp">
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                           <h2>Slide 2</h2>
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                           <h2>Slide 3</h2>
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                           <h2>Slide 4</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+         </div>
+
+        <div class="text-main">
+            <p>Top 10 dos livros mais vendidos!</p>
+        </div>
+
+        <!-----------------------Produtos----------------------->
+        <div class="product-container">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <img src="../img/harry-potter.jpg" alt="Harry Potter" class="product-image">
+                <div class="discount-tag">15% OFF</div>
+                <div class="inf-card">
+                    <h3 class="product-title">Harry Potter - Pedra Filosofal</h3>
+                    <p class="product-price">De <span class="old-price">R$ 39,99</span> por <span class="new-price">R$
+                            34,99</span></p>
+                    <div class="delivery-text">
+                        <i class='bx bx-envelope'></i>
+                        <p>Entregue por Leitura&Cia</p>
+                    </div>
+                </div>
+                <div class="button-card">
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <img src="../img/jujutsu-kaisen.webp" alt="Jujutsu Kaisen" class="product-image">
+                <div class="discount-tag">15% OFF</div>
+                <div class="inf-card">
+                    <h3 class="product-title">Jujutsu Kaisen - Manga Volume 1</h3>
+                    <p class="product-price">De <span class="old-price">R$ 37,99</span> por <span class="new-price">R$
+                            32,29</span></p>
+                    <div class="delivery-text">
+                        <i class='bx bx-envelope'></i>
+                        <p>Entregue por Leitura&Cia</p>
+                    </div>
+                </div>
+                <div class="button-card">
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <img src="../img/demon-slayer.jpg" alt="Demon Slayer" class="product-image">
+                <div class="discount-tag">15% OFF</div>
+                <div class="inf-card">
+                    <h3 class="product-title">Demon Slayer - Kimetsu no Yaiba Vol. 1</h3>
+                    <p class="product-price">De <span class="old-price">R$ 28,50</span> por <span class="new-price">R$
+                            24,22</span></p>
+                    <div class="delivery-text">
+                        <i class='bx bx-envelope'></i>
+                        <p>Entregue por Leitura&Cia</p>
+                    </div>
+                </div>
+                <div class="button-card">
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product-card">
+                <img src="../img/destrua-Diario.jpeg" alt="Deste Lado do Livro" class="product-image">
+                <div class="discount-tag">6% OFF</div>
+                <div class="inf-card">
+                    <h3 class="product-title">Destrua este Diario - Keri Smith</h3>
+                    <p class="product-price">De <span class="old-price">R$ 69,99</span> por <span class="new-price">R$
+                            65,89</span></p>
+                    <div class="delivery-text">
+                        <i class='bx bx-envelope'></i>
+                        <p>Entregue por Leitura&Cia</p>
+                    </div>
+                </div>
+                <div class="button-card">
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="social-media">
+        <p>Redes Sociais</p>
+        <img src="../img/wpp.png" alt="WhatsApp">
+        <img src="../img/instagram.webp" alt="Instagram">
+        <img src="../img/x.webp" alt="X (Twitter)">
+        <img src="../img/facebook.png" alt="Facebook">
+    </div>
+
+    <!-----------------------Footer (rodapé do site)----------------------->
+
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3 onclick="toggleSection('about-section')">SOBRE A CULTURA <i class='bx bx-chevron-down'></i></h3>
+                <ul id="about-section" class="hidden">
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Vale-presente</a></li>
+                    <li><a href="#">Recuperação judicial</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 onclick="toggleSection('customer-service')">ATENDIMENTO AO CLIENTE <i
+                        class='bx bx-chevron-down'></i></h3>
+                <ul id="customer-service" class="hidden">
+                    <li><a href="#">Entre em contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de entrega e devolução</a></li>
+                    <li><a href="#">Políticas de vendas</a></li>
+                    <li><a href="#">Perguntas e respostas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 onclick="toggleSection('services')">SERVIÇOS <i class='bx bx-chevron-down'></i></h3>
+                <ul id="services" class="hidden">
+                    <li><a href="#">Cultura Pass</a></li>
+                    <li><a href="#">Sebo Cultura</a></li>
+                    <li><a href="#">Teatro Cultura</a></li>
+                    <li><a href="#">Mais Cultura</a></li>
+                    <li><a href="#">Solicitação de eventos</a></li>
+                    <li><a href="#">Cultura Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 onclick="toggleSection('payment-methods')">Formas de pagamento <i class='bx bx-chevron-down'></i>
+                </h3>
+                <ul id="payment-methods" class="hidden">
+                    <li><img src="../img/mastercard.png" alt="MasterCard" width="40px"></li>
+                    <li><img src="../img/hiper.png" alt="HiperCard" width="40px"></li>
+                    <li><img src="../img/pix.png" alt="Pix" width="50px"></li>
+                    <li><img src="../img/elo.png" alt="Elo" width="40px"></li>
+                    <li><img src="../img/visa.png" alt="Visa" width="40px"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="div-black-footer">
+            <p>Leitura&Cia Copyright 2024</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Abre o menu lateral ao clicar no ícone do menu
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            document.getElementById("side-menu").style.left = "0";
+        });
+
+        // Fecha o menu lateral ao clicar no ícone de fechar
+        document.getElementById("close-menu").addEventListener("click", function () {
+            document.getElementById("side-menu").style.left = "-100%";
+        });
+
+        // Manu suspenso para abrir opcoes ao clicar
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
